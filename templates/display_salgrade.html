@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALGRADE DETAILS</title>
+</head>
+<body>
+    <center>
+
+        <h1>Salgrade Details</h1>
+        <table border="1">
+            <tr>
+                <th>Grade</th>
+                <th>Lowsal</th>
+                <th>Highsal</th>
+            </tr>
+            {% for SG in QSLSG %}
+            <tr>
+                <td>{{ SG.grade }}</td>
+                <td>{{ SG.losal }}</td>
+                <td>{{ SG.hisal}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </center>
+    
+</body>
+</html>

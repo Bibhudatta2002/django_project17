@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emptomgrjoin</title>
+    <style>
+       table{
+        background-color: rgb(221, 205, 185);
+        color:black
+       }
+    
+        
+
+
+
+    </style>
+
+</head>
+<body>
+    <center>
+        <h1>emp To mgr join</h1>
+        <table border="1px">
+            <tr>
+                <th>Empno</th>
+                <th>Empname</th>
+                <th>Job</th>
+                <th>Mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>deptno</th>
+                <th>Comm</th>
+
+
+
+                <th>Empno</th>
+                <th>Empname</th>
+                <th>Job</th>
+                <th>Mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>deptno</th>
+                <th>Comm</th>
+                
+               
+            </tr>
+            {% for EMO in QSLEMO %}
+            <tr>
+                
+                <td>{{EMO.empno}}</td>
+                <td>{{EMO.ename}}</td>
+                <td>{{EMO.job}}</td>
+                <td>{{EMO.mgr}}</td>
+                <td>{{EMO.hiredate}}</td>
+                <td>{{EMO.sal}}</td>
+                <td>{{EMO.deptno}}</td>
+                <td>{{EMO.comm}}</td>
+
+
+
+
+                <td>{{EMO.mgr.empno}}</td>
+                <td>{{EMO.mgr.ename}}</td>
+                <td>{{EMO.mgr.job}}</td>
+                <td>{{EMO.mgr.mgr}}</td>
+                <td>{{EMO.mgr.hiredate}}</td>
+                <td>{{EMO.mgr.sal}}</td>
+                <td>{{EMO.mgr.deptno}}</td>
+                <td>{{EMO.mgr.comm}}</td>
+
+
+                
+
+
+
+                
+               
+
+
+            </tr>
+             {% endfor %}
+        </table>
+
+
+
+    </center>
+    
+</body>
+</html>

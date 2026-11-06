@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE DETAILS</title>
+</head>
+<body>
+    <center>
+
+        <h1>Employee Details</h1>
+        <table border="1">
+            <tr>
+                <th>EmpNo</th>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>Mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>Comm</th>
+                <th>Deptno</th>
+            </tr>
+            {% for i in QSLE %}
+            <tr>
+                <td>{{ i.empno }}</td>
+                <td>{{ i.ename }}</td>
+                <td>{{ i.job }}</td>
+                <td>{{ i.mgr.empno }}</td>
+                <td>{{ i.hiredate }}</td>
+                <td>{{ i.sal }}</td>
+                <td>{{ i.comm }}</td>
+                <td>{{ i.deptno}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </center>
+    
+</body>
+</html>
